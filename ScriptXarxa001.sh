@@ -130,13 +130,13 @@ elif [ $sino == "n" ] || [ $sino == "N" ]
         then
         ruta="sudo iptables -t nat -A POSTROUTING -o enp0s3 -j MASQUERADE"
 		echo "Doncs $ruta, sera el comandament que gastarem per a enrutar els paquets"
-
+		
         read
 else
         echo "Opcio no disponible, pots repetir?"
         sino_enrutar
 fi
-
+sudo apt install iptables-persistent
 }
 ######################################################################################################################
 clear
